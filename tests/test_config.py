@@ -36,9 +36,11 @@ def pioneer_app_dir(tmp_path_factory):
     root = tmp_path_factory.mktemp("Pioneer")
     rb_dir = root / "rekordbox"
     rb6_dir = root / "rekordbox6"
+    rb7_dir = root / "rekordbox7"
     agent_storage_dir = root / "rekordboxAgent" / "storage"
     rb_dir.mkdir(parents=True)
     rb6_dir.mkdir(parents=True)
+    rb7_dir.mkdir(parents=True)
     agent_storage_dir.mkdir(parents=True)
 
     # Mock `rekordbox3.settings` files
